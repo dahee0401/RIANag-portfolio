@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리앙에이지</title>
+    <!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/common.css">
+	<link rel="stylesheet" href="/assets/css/ui.css">
+
+    <link rel="stylesheet" href="/assets/css/swiper.css">
+    <link rel="stylesheet" href="/assets/css/pc_contact.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="/assets/css/mo_contact.css" media="(max-width: 768px)">
+
+    <script src="/assets/js/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/lazyload.js"></script>
+    <script src="./assets/js/lenis.min.js"></script>
+    <script src="/assets/js/common.js" defer></script>
+    <script src="/assets/js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <style>
+        @media (min-width: 768px) {
+            a.tel {pointer-events:none; cursor:default;}
+        }
+    </style>
+</head>
+<body class="fadeout">
+	<div id="wrap">
+      <!-- header -->
+      <header class="pc type2">
+        <div class="inner">
+          <h1 onclick="location.href='/'"><img src="/assets/images/common/h1_logo_black.png" alt="RIAN" /></h1>
+          <button class="btn_ham">site map</button>
+        </div>
+            <div class="site_map">
+                <ul>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/project.html">Works</a></li>
+                    <li><a href="/insight_list.html">What's on</a></li>
+                    <li><a href="/join.html">Join Our Team</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+                <!-- bottom -->
+                <div class="bottom">
+                    <div>
+                        <a href="/contact.html">RIANAG@RIANAG.COM</a>
+                    </div>
+                    <a href="/assets/RIANag_CompanyProfile_20250725_New_v0.20.pdf" class="download" target="_blank">BROCHURE DOWNLOAD</a>
+                </div>
+                <!-- //bottom -->
+            </div>
+      </header>
+      <!-- //header -->
+      <!-- header -->
+      <header class="mo type3 black">
+        <div class="inner">
+          <a href="javascript:void(0);" onclick="goBack();">BACK</a>
+          <h1><img src="/assets/images/common/h1_logo.png" alt="RIAN" /></h1>
+          <button class="btn_ham">site map</button>
+        </div>
+            <div class="site_map">
+                <ul>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/project.html">Works</a></li>
+                    <li><a href="/insight_list.html">What's on</a></li>
+                    <li><a href="/join.html">Join Our Team</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+                <!-- bottom -->
+                <div class="bottom">
+                    <div>
+                        <a href="/contact.html">RIANAG@RIANAG.COM</a>
+                        <!-- <a href="http://daum.net" target="_blank">BLOG</a> -->
+                    </div>
+                    <a href="/assets/RIANag_CompanyProfile_20250725_New_v0.20.pdf" class="download" target="_blank">BROCHURE DOWNLOAD</a>
+                </div>
+                <!-- //bottom -->
+            </div>
+      </header>
+      <!-- //header -->
+
+        <section>
+            <div class="cont_inner">
+                <p><span>Let’s collaborate</span></p>
+                <p><strong>project@<br/>rianag.com</strong></p>
+                <ul>
+                    <li>
+                        <span>OFFICE ADRESS</span>
+                        <p>
+                            서울 특별시 강서구 양천로 551-17<br/>
+                            한화비즈메트로 1차 310호,311호
+                            <button onclick="copyTextAndToast(this, '주소가 복사되었습니다.')"></button>
+                        </p>
+                        <a href="javascript:void(0);" class="map">VIEW ON MAPS</a>
+                    </li>
+                    <li>
+                        <span>E-MAIL</span>
+                        <em>프로젝트 및 견적 문의</em>
+                        <p>
+                            project@rianag.com
+                            <button onclick="copyTextAndToast(this, '이메일 주소가 복사되었습니다.')"></button>
+                        </p>
+
+                        <em>입사지원 및 관련 문의</em>
+                        <p>
+                            recruit@rianag.com
+                            <button onclick="copyTextAndToast(this, '이메일 주소가 복사되었습니다.')"></button>
+                        </p>
+                    </li>
+                    <li>
+                        <span>TEL</span>
+                        <p><a class="tel" href="tel:0226353601">02.2635.3601</a></p>
+                    </li>
+                    <li>
+                        <span>FAX</span>
+                        <p>02.2635.3602</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- bottom -->
+        <div id="bottom" class="type3">
+            <div>
+                <span>© RIANag INC. All Rights Reserved.</span>
+                <button class="top">Back to Top</button>
+            </div>
+        </div>
+		<!-- //bottom -->
+        <div class="custom-cursor dot-cursor"></div>
+        <!-- toast -->
+        <div class="toast"></div>
+        <!-- //toast -->
+	</div>
+
+    <script>
+        $(function(){
+            setTimeout(function () {
+                $('section .cont_inner > p > span').addClass('active');
+            }, 0);
+            setTimeout(function () {
+                $('section .cont_inner > p > strong').addClass('active');
+            }, 400);
+            setTimeout(function () {
+                $('section .cont_inner ul li').addClass('active');
+            }, 1000);
+            customCursorEffect()
+            /* header스크롤 */
+
+            $('.tel').on('click', function (e) {
+                const href = $(this).attr('href');
+                if (!href.startsWith('tel:')) {
+                    e.preventDefault();
+                }
+            });
+
+            $('.map').on('click', function () {
+                const isMobile = window.innerWidth <= 768;
+                const url = isMobile
+                ? 'https://m.place.naver.com/place/654854931/location?filter=location&selected_place_id=654854931'
+                : 'https://map.naver.com/p/entry/place/654854931?c=15.00,0,0,0,dh&placePath=/home?from=map&from=map&fromPanelNum=1&additionalHeight=76&timestamp=202506251720&locale=ko&svcName=map_pcv5&fromPanelNum=1&additionalHeight=76&timestamp=202506251709&locale=ko&svcName=map_pcv5';
+                
+                window.open(url, '_blank');
+            });
+            let prevIsMobile = window.innerWidth <= 767;
+            $(window).on('resize', function () {
+				const currentIsMobile = window.innerWidth <= 767;
+
+				if (prevIsMobile !== currentIsMobile) {
+					prevIsMobile = currentIsMobile;
+
+					// 📌 다시 적용
+					customCursorEffect();
+				}
+			});
+
+        })//fn
+    </script>
+    
+</body>
+</html>

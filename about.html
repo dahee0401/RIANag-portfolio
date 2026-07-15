@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리앙에이지</title>
+    <!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/common.css">
+	<link rel="stylesheet" href="/assets/css/ui.css">
+
+    <link rel="stylesheet" href="/assets/css/swiper.css">
+    <link rel="stylesheet" href="/assets/css/pc_about.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="/assets/css/mo_about.css" media="(max-width: 768px)">
+
+    <script src="/assets/js/jquery-3.7.1.min.js"></script>
+	<script src="/assets/js/lazyload.js"></script>
+	<script src="./assets/js/lenis.min.js"></script>
+	<script src="/assets/js/common.js"></script>
+    <script src="/assets/js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="/assets/js/about.js" defer></script>
+</head>
+<body class="fadeout">
+    <div id="wrap" class="wrap">
+        <!-- header -->
+		<header class="pc type2 white">
+			<div class="inner">
+				<a href="#none">WORK</a>
+				<h1><img src="/assets/images/common/h1_logo.png" alt="RIAN" /></h1>
+				<button class="btn_ham">site map</button>
+			</div>
+            <div class="site_map">
+                <ul>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/project.html">Works</a></li>
+                    <li><a href="/insight_list.html">What's on</a></li>
+                    <li><a href="/join.html">Join Our Team</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+                <!-- bottom -->
+                <div class="bottom">
+                    <div>
+                        <a href="/contact.html">RIANAG@RIANAG.COM</a>
+                    </div>
+                    <a href="/assets/RIANag_CompanyProfile_20250725_New_v0.20.pdf" class="download" target="_blank">BROCHURE DOWNLOAD</a>
+                </div>
+                <!-- //bottom -->
+            </div>
+		</header>
+		<!-- //header -->
+
+        <!-- header -->
+		<header class="mo type3 white">
+			<div class="inner">
+				<a href="javascript:void(0);" onclick="goBack();">BACK</a>
+				<h1 onclick="location.href='/'"><img src="/assets/images/common/h1_logo.png" alt="RIAN" /></h1>
+				<button class="btn_ham">site map</button>
+			</div>
+            <div class="site_map">
+                <ul>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/project.html">Works</a></li>
+                    <li><a href="/insight_list.html">What's on</a></li>
+                    <li><a href="/join.html">Join Our Team</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+                <!-- bottom -->
+                <div class="bottom">
+                    <div>
+                        <a href="/contact.html">RIANAG@RIANAG.COM</a>
+                    </div>
+                    <a href="/assets/RIANag_CompanyProfile_20250725_New_v0.20.pdf" class="download" target="_blank">BROCHURE DOWNLOAD</a>
+                </div>
+                <!-- //bottom -->
+            </div>
+		</header>
+		<!-- //header -->
+
+        <div class="about_visual dark-section">
+                <div class="parallax-bg video-bg lazyload"
+                    data-src="/assets/video/About_Draft.mp4"
+                    data-src-mobile="/assets/video/About_Draft_m.mp4">
+                </div>
+            <div class="custom-cursor scroll">Scroll</div>
+            <button class="to-bottom mo">Back to bottom</button>
+        </div>
+        <section class="about_vision light-section">
+            <div class="cont_inner">
+                <h2>
+                    <p class="mo_vision">We deliver digital benefit to the world and make digital solutions that deliver real results.</p>
+                    <ul class="pc_vision">
+                        <li><span>We deliver digital benefit</span> </li>
+                        <li><span>to the world and make digital solutions </span></li>
+                        <li><span>that deliver real results.</span></li>
+                    </ul>
+                </h2>
+                <dl class="one">
+                    <dt>
+                        <span>We are</span>
+                    </dt>
+                    <dd>
+                        <strong>e-Commerce, e-Finance, e-Brand 등 온라인 사업분야에서 강한 리더십과 믿음직한 커뮤니케이션 능력을 활용하여 글로벌 비즈니스, 모바일, 컨버전스 분야로 확대해 가고 있습니다.</strong>
+                    </dd>
+                </dl>
+                <dl class="two">
+                    <dt><span>We do</span></dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <strong>01</strong>
+                                <p>Operations that consider the convenience of our customers.</p>
+                            </dt>
+                            <dd>
+                                <p>현장에서 검증된 경험과 철저한 품질 관리 및 지원 체<br/>계를 바탕으로, 안정적인 구축과 개편 사업을 성공적<br/>으로 수행합니다.</p>
+                                <p>사용자 중심의 UX 설계와 최신 트렌드를 반영하여, <br/>최적의 품질과 효율적인 기간 내에 더 나은 방향을 제<br/>시하고 실행합니다.</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <strong>02</strong>
+                                <p>Renewal & new construction to maximize customer benefits.</p>
+                            </dt>
+
+                            <dd>
+                                <p>다양한 디지털 플랫폼을 성공적으로 운영해온 풍부한 <br/>경험을 보유하고 있습니다.</p>
+                                <p>특화된 인력과 깊이 있는 인사이트를 바탕으로, 안정<br/>성과 창의성을 갖춘 맞춤형 운영을 제공합니다.</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <strong>03</strong>
+                                <p>Actionable consulting that delivers real results.</p>
+                            </dt>
+                            <dd>
+                                <p>실행 가능한 컨설팅을 목표로 합니다.<br/> 축적된 노하우와 전문 인력을 바탕으로, 고객사의 환<br/>경과 목표에 최적화된 맞춤형 전략을 수립합니다.</p>
+                                
+                                <p>구체적이고 실질적인 수행 전략을 통해 실질적인 성<br/>과를 창출하는 컨설팅을 제공합니다.</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <strong>04</strong>
+                                <p>Content that benefits everyone.</p>
+                            </dt>
+                            <dd>
+                                <p>리앙에이지는 웹페이지, APP 등 디지털 솔루션 구축 및 운영사업과 함께 문화사업의 일환으로 웹툰 컨텐츠를 제작합니다.</p>
+                                <p>저희의 콘텐츠를 접하는 분들에게, 더 큰 즐거움과 경험을 드리는 것이 리앙에이지가 지향하는 ‘이로움’이라 생각합니다.</p>
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+        <p><img src="/assets/images/about/sec_02_visual.png" alt=""></p>
+
+        <section class="about_awards light-section">
+            <div class="cont_inner">
+                <dl>
+                    <dt>
+                        <h3>Awards</h3>
+                    </dt>
+                    <dd>
+                        <h2>
+                            <ul class="pc_vision">
+                                <li><span>We have been</span> </li>
+                                <li><span>recognized with several</span></li>
+                                <li><span>awards.</span></li>
+                            </ul> 
+                            <p class="mo_vision"><strong>We have been recognized with several awards.</strong></p>
+                        </h2>  
+                        <p>다수의 프로젝트를 성공적으로 수행하며<br/>여러 수상 경력으로 인정받고 있습니다.</p>
+                        <div class="about_swiper">
+                            <div class="visual swiper-container">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <strong>8</strong>
+                                        <span>Commerce</span>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <strong>2</strong>
+                                        <span>Finance</span>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <strong>1</strong>
+                                        <span>Digital service</span>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <strong>1</strong>
+                                        <span>Communication</span>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <strong>1</strong>
+                                        <span>Web standard</span>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <strong>3</strong>
+                                        <span>Government</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="custom-cursor drag">Drag</div>
+                        </div>
+                        <dl>
+                            <dt><span></span></dt>
+                            <dd>
+                                <div>
+                                    <p>
+                                        <em>DGB캐피탈</em>
+                                        <i>2021 웹어워드 금융분야 최우수상</i>
+                                    </p>
+                                    <p>
+                                        <em>현대리바트 윌리엄스 소노마</em>
+                                        <i>2019 웹어워드 브랜드쇼핑몰분야 대상</i>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        <em>GS리테일 랄라블라</em>
+                                        <i>2018 웹어워드 전문쇼핑분야 대상</i>
+                                    </p>
+                                    <p>
+                                        <em>ABL 생명보험</em>
+                                        <i>2017 웹어워드 생명보험분야 최우수상</i>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        <em>캐논코리아컨슈머이미징</em>
+                                        <i>2017 웹어워드 전문쇼핑몰분야 최우수상</i>
+                                    </p>
+                                    <p>
+                                        <em>한샘 통합쇼핑몰</em>
+                                        <i>2010 웹어워드 가구/인테리어분야 대상</i>
+                                    </p>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><span></span></dt>
+                            <dd>
+                                <div>
+                                    <p>
+                                        <em>우리은행 테블릿브랜치 시스템 </em>
+                                        <i>2020 스마트앱어워드 웹 표준 이노베이션 대상</i>
+                                    </p>
+                                    <p>
+                                        <em>CJ프레시웨이 미트솔루션</em>
+                                        <i>2019 스마트앱어워드 전문쇼핑분야 대상</i>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        <em>SK브로드밴드 SK스토아</em>
+                                        <i>2018 스마트앱어워드 홈쇼핑분야 대상</i>
+                                    </p>
+                                    <p>
+                                        <em>CJ오쇼핑 1st Look 매거진 & 쇼핑</em>
+                                        <i>2017 스마트앱어워드 브랜드/쇼핑부문 통합대상</i>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        <em>홈앤쇼핑</em>
+                                        <i>2014 스마트앱어워드 종합쇼핑분야 대상</i>
+                                    </p>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><span></span></dt>
+                            <dd>
+                                <div>
+                                    <p>
+                                        <em>홈앤쇼핑 쇼핑몰 앱</em>
+                                        <i>2021 ICT Award Korea  디지털 서비스 혁신부분 통합대상</i>
+                                    </p>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><span></span></dt>
+                            <dd>
+                                <div>
+                                    <p>
+                                        <em>중소벤처기업부</em>
+                                        <i>2021 모범중소기업인 중소벤처기업부 장관상</i>
+                                    </p>
+                                    <p>
+                                        <em>중소벤처기업부</em>
+                                        <i>2021 유공자포상 중소벤처기업부 장관상</i>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        <em>중소벤처기업부</em>
+                                        <i>2021 디지털서비스혁신부문 과학기술정보통신부 장관상</i>
+                                    </p>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><span></span></dt>
+                            <dd>
+                                <div>
+                                    <p>
+                                        <em>한국디자인진흥원</em>
+                                        <i>2009 GOOD DESIGN 선정 커뮤니케이션부문</i>
+                                    </p>
+                                </div>
+                            </dd>
+                        </dl>
+
+                    </dd>
+                </dl>
+            </div>
+        </section>
+        <section class="about_partners dark-section">
+            <div class="cont_inner">
+                <h3>Our Partners</h3>
+                <ul class="pc_list">
+                    <li><img src="/assets/images/about/prt_logo/Frame 73.png" alt="홈앤쇼핑"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 75.png" alt="롯데면세점"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 96.png" alt="신라면세점"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 95.png" alt="이마트"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 74.png" alt="신세계"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 97.png" alt="신세계쇼핑"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 76.png" alt="GS리테일"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 79.png" alt="리바트"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 93.png" alt="SK플래닛"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 84.png" alt="SK스토아"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 77.png" alt="더현대"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 98.png" alt="나이스평가정보"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 85.png" alt="DGB캐피탈"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 101.png" alt="ABL생명"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 92.png" alt="미래에셋"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 99.png" alt="캐논"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 91.png" alt="비씨카드"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 102.png" alt="롯데카드"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 86.png" alt="롯데홈쇼핑"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 81.png" alt="롯데하이마트"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 78.png" alt="CJ오쇼핑"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 87.png" alt="대한통운"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 103.png" alt="CJ프레시웨이"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 80.png" alt="올리브영"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 83.png" alt="KB국민카드"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 90.png" alt="IBK기업은행"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 94.png" alt="우리은행"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 89.png" alt="랄라블라"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 82.png" alt="KSHOPPING"></li>
+                    <li><img src="/assets/images/about/prt_logo/Frame 88.png" alt="Bshopping"></li>
+                </ul>
+
+                <ul class="mo_list">
+                    <li><img src="/assets/images/about/mo_prt_logo/1.png" alt="홈앤쇼핑"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/2.png" alt="롯데면세점"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/3.png" alt="신라면세점"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/4.png" alt="이마트"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/5.png" alt="신세계"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/6.png" alt="신세계쇼핑"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/7.png" alt="GS리테일"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/8.png" alt="리바트"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/9.png" alt="SK플래닛"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/10.png" alt="SK스토아"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/11.png" alt="더현대"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/12.png" alt="나이스평가정보"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/13.png" alt="DGB캐피탈"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/14.png" alt="ABL생명"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/15.png" alt="미래에셋"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/16.png" alt="캐논"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/17.png" alt="비씨카드"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/18.png" alt="롯데카드"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/19.png" alt="롯데홈쇼핑"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/20.png" alt="롯데하이마트"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/21.png" alt="CJ오쇼핑"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/22.png" alt="대한통운"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/23.png" alt="CJ프레시웨이"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/24.png" alt="올리브영"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/25.png" alt="KB국민카드"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/26.png" alt="IBK기업은행"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/27.png" alt="우리은행"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/28.png" alt="랄라블라"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/29.png" alt="KSHOPPING"></li>
+                    <li><img src="/assets/images/about/mo_prt_logo/30.png" alt="Bshopping"></li>
+                </ul>
+            </div>
+        </section>
+        <!-- bottom -->
+        <div id="bottom" class="type3">
+            <div>
+                <span>© RIANag INC. All Rights Reserved.</span>
+                <button class="top">Back to Top</button>
+            </div>
+        </div>
+        <div class="custom-cursor dot-cursor"></div>
+    </div>
+    <script>
+        customCursorEffect($('.about_visual'), 'scroll');
+        customCursorEffect($('.about_swiper'), 'drag');  
+        window.addEventListener('load', () => {
+            ScrollTrigger.refresh();
+            runGsapScrollAnimations('.about_vision', '.about_vision h2 span', 0.2);
+            runGsapScrollAnimations('.about_awards', '.about_awards h2 span', 0.3);
+            // ✅ 모바일 전용 strong 애니메이션 (mo_vision 내부)
+            ScrollTrigger.matchMedia({
+                "(max-width: 768px)": function () {
+                    runGsapScrollAnimations('.about_awards', '.about_awards h2 .mo_vision strong', 0.2);
+                }
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            updateLazyloadSrc(); // ✅ 초기 비디오 src 설정
+            new LazyLoad();      // ✅ 이미지 lazyload 실행
+
+            // ✅ 리사이즈 대응
+            let resizeTimer;
+            let prevIsMobile = window.innerWidth <= 767;
+            window.addEventListener('resize', function () {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(updateLazyloadSrc, 200);
+                const currentIsMobile = window.innerWidth <= 767;
+
+				if (prevIsMobile !== currentIsMobile) {
+					prevIsMobile = currentIsMobile;
+
+					// 📌 다시 적용
+					customCursorEffect($('.parallax-bg'), 'view');
+					customCursorEffect($('.visual_cont'), 'view');
+					customCursorEffect($('.video-bg'), 'view');
+				}
+            });
+        });
+
+    </script>
+</body>
+</html>
