@@ -23,7 +23,7 @@ span { display: block; }
 .project-card ul { flex: 1; width: 7.8rem; } 
 .project-card ul li { width: 100%; height: 1rem; align-self: stretch; border-radius: 4px; background: rgba(255, 255, 255, 0.2); } 
 .project-card ul li + li { width: 4.6rem; margin-top: 4px; } 
-.clover { position: relative; display: flex; justify-content: center; align-items: center; width: 4.7rem; height: 4.7rem; background-image: url(/assets/images/etc/clover.svg); background-position: center; background-size: cover; background-repeat: no-repeat; } 
+.clover { position: relative; display: flex; justify-content: center; align-items: center; width: 4.7rem; height: 4.7rem; } 
 .clover span { font-family: var(--font-sub); color: #4e4e4e; font-size: 18px; font-weight: 700; line-height: 120%; letter-spacing: -0.36px; } 
 .project-product { position: absolute; left: 7.692vw; bottom: 3.554dvh; display: flex; gap: 1.6rem; align-items: center; justify-content: center; padding: 1.2rem; border-radius: 12px; background: rgba(255, 255, 255, 0.3); backdrop-filter: blur(8px); } 
 .product-img { width: 8rem; } 
@@ -32,7 +32,7 @@ span { display: block; }
 .prices { display: flex; align-items: baseline; margin-top: 1.4rem; } 
 .product-info strong { color: #fff; font-family: var(--font-sub); font-size: 1.5rem; font-weight: 700; line-height: 120%; } 
 .product-info span { color: #fff; font-size: 1.4rem; font-weight: 700; line-height: 120%; letter-spacing: -0.14px; } 
-.to-bottom.dark{background-image: url(/assets/images/work_detail/to-bottm-dark.svg);}
+.to-bottom.dark{background-image: url(../images/work_detail/to-bottm-dark.svg);}
  .visual-sub { padding: 2.4rem 3rem; } 
 .visual-sub .project-info li { color: #101010; font-family: 'Plus Jakarta Sans'; font-size: 1.2rem; font-weight: 700; line-height: 102%; letter-spacing: -0.24px; } 
 .visual-sub .project-info li:not(:first-child) { margin-top: 1.6rem; } 

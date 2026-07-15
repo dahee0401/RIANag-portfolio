@@ -47,7 +47,7 @@ body { height: 100%; font-family: var(--font-main); font-weight: 400; font-style
 .board_type_toggle { border-bottom: 1px solid rgba(0, 0, 0, 0.2); } 
 .board_type_toggle > dt { border-top: 1px solid rgba(0, 0, 0, 0.2); position: relative; height: 8rem; display: flex; justify-content: flex-start; align-items: center; } 
 .board_type_toggle > dt > button { position: relative; display: block; width: 100%; height: 100%; color: #000; font-family: 'Plus Jakarta Sans'; font-size: 2rem; font-style: normal; font-weight: 700; letter-spacing: -0.64px; cursor: pointer; } 
-.board_type_toggle > dt > button::after { content: ''; position: absolute; width: 2rem; height: 2rem; right: 0; top: 50%; transform: translateY(-50%); background: url('/assets/images/join/toggle.svg'); background-repeat: no-repeat; background-position: center; background-size: cover; transition: all 0.3s ease; } 
+.board_type_toggle > dt > button::after { content: ''; position: absolute; width: 2rem; height: 2rem; right: 0; top: 50%; transform: translateY(-50%); background: url('../images/join/toggle.svg'); background-repeat: no-repeat; background-position: center; background-size: cover; transition: all 0.3s ease; } 
 .board_type_toggle > dt > button.active::after { transform: translateY(-50%) rotate(180deg); } 
 .board_type_toggle > dd { height: 0; line-height: 1.5; overflow: hidden; transition: height 0.3s ease; overflow: hidden; } 
 .board_type_toggle > dd > ul { display: flex; flex-direction: column; padding: 4rem 0; gap: 4rem; } 

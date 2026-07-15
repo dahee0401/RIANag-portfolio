@@ -475,7 +475,7 @@ function initFullpage() {
 // ✅ 리스트 JSON 로딩 및 리스트 동적 생성
 function loadProjectList() {
     const $lists = $('.lists');
-    $.getJSON('/assets/data/projectList.json', function (data) {
+    $.getJSON('./assets/data/projectList.json', function (data) {
         data.forEach((item) => {
             const tagsHtml = item.tags.map((tag) => `<li>${tag}</li>`).join('');
             const html = `

@@ -20,7 +20,7 @@ header .inner *, header .site_map a:hover {cursor: pointer !important;}
 header h1 img {height:24px; display:block;}
 header .inner {padding:26px 30px; position:relative; z-index:91; display:flex; align-items:center; justify-content:space-between;}
 header .inner a {color:#fff; font-size:14px; font-weight:800; letter-spacing:-0.01em; display:flex; align-items:center; gap:4px;}
-header .inner a:after {width:20px; height:20px; background-image:url('/assets/images/common/icon_split.png'); background-position:0 -50px; background-repeat:no-repeat; background-size:500px auto; content:''; display:block;}
+header .inner a:after {width:20px; height:20px; background-image:url('../images/common/icon_split.png'); background-position:0 -50px; background-repeat:no-repeat; background-size:500px auto; content:''; display:block;}
 header .inner .btn_ham {width:28px; height:28px; font-size:0; background-color:transparent; border:0; position:relative; cursor:pointer;}
 header .inner .btn_ham:before, header .inner .btn_ham:after {width:100%; border-top:5px solid #fff; content:''; position:absolute; left:0; display:block; transition:all 0.25s ease-in-out;}
 header .inner .btn_ham:before {top:6px;}
@@ -53,7 +53,7 @@ header .site_map .bottom {bottom:0; transition-delay:0.95s;}
 header .site_map .bottom * {color:#000; font-size:14px; font-weight:800; letter-spacing:0;}
 header .site_map .bottom > div {display:flex; gap:160px;}
 header .site_map .bottom .download {display:flex; align-items:center; gap:12px;}
-header .site_map .bottom .download:after {width:20px; height:20px; background-image:url('/assets/images/common/icon_split.png'); background-position:-100px 0; background-repeat:no-repeat; background-size:500px auto; content:''; display:block;}
+header .site_map .bottom .download:after {width:20px; height:20px; background-image:url('../images/common/icon_split.png'); background-position:-100px 0; background-repeat:no-repeat; background-size:500px auto; content:''; display:block;}
 
 #bottom {padding:38px 30px; border-top:1px solid #FFFFFF4D; position:absolute; right:0; bottom:0; left:0; z-index:100; display:flex; align-items:center; justify-content:space-between;}
 #bottom * {color:#fff; font-size:14px; font-weight:800;}
@@ -61,7 +61,7 @@ header .site_map .bottom .download:after {width:20px; height:20px; background-im
 #bottom  button {font-size:18px; font-weight:800; line-height:150%;}
 #bottom div {display:flex; align-items:center;}
 #bottom .download {display:flex; align-items:center; gap:12px;}
-#bottom .download:after {width:20px; height:20px; background-image:url('/assets/images/common/icon_split.png'); background-position:-50px 0; background-repeat:no-repeat; background-size:500px auto; content:''; display:block;}
+#bottom .download:after {width:20px; height:20px; background-image:url('../images/common/icon_split.png'); background-position:-50px 0; background-repeat:no-repeat; background-size:500px auto; content:''; display:block;}
 header.hide {transform: translateY(-100%); transition: transform 0.3s ease-in-out;}
 
 /* header type2 */
@@ -71,7 +71,7 @@ header.type2.white .inner .btn_ham:before, header.type2.white .inner .btn_ham:af
 header.type2.white .inner.close .btn_ham:before, header.type2.white .inner.close .btn_ham:after {border-top:5px solid #000;}
 
 /* header type3 */
-header.type3 .inner a::before {width:20px; height:20px; background-image:url('/assets/images/common/icon_split.png'); background-position:0 -50px; background-repeat:no-repeat; background-size:500px auto; content:''; display:block; transform:rotate(180deg);}
+header.type3 .inner a::before {width:20px; height:20px; background-image:url('../images/common/icon_split.png'); background-position:0 -50px; background-repeat:no-repeat; background-size:500px auto; content:''; display:block; transform:rotate(180deg);}
 header.type3 .inner a::after {display:none;}
 header.type3 h1 img {opacity:0; transition: opacity 0.3s ease;}
 
@@ -88,14 +88,14 @@ header.type2 a {color:#000;}
 #bottom.type3 {padding:0; background-color: #000; position:relative; flex-wrap:wrap;}
 #bottom.type3 > section {width:100%; height:100%; padding:82px 30px 62px; background-color:#000; display:flex; align-items:center;}
 #bottom.type3 > section > a:last-of-type {width:100%; font-size:3.5rem; font-weight:400; line-height:102%; text-align:center; display:block;}
-#bottom.type3 > section > a:first-of-type {width:26px; height:26px; background-image:url('/assets/images/common/icon_split.png'); background-position:-60px -115px; background-repeat:no-repeat; background-size:500px auto; display:block;}
+#bottom.type3 > section > a:first-of-type {width:26px; height:26px; background-image:url('../images/common/icon_split.png'); background-position:-60px -115px; background-repeat:no-repeat; background-size:500px auto; display:block;}
 #bottom.type3 > button, #bottom.type3 > div > button {display:flex; align-items:center; gap:6px;}
 #bottom.type3 > button::after, #bottom.type3 > div > button::after  {content:''; width:15px; height:15px; background-image:url('../images/common/icon_split.png'); background-size:500px 500px; background-position:-50px -50px; display:inline-block;}
 #bottom.type3 > div {width:100%; padding:38px 30px; border-top:1px solid #FFFFFF4D; justify-content: space-between;}
 
 
 /* go admin : hidden menu */
-header #hidden_menu {width:220px; height:70px; background:url('/assets/images/etc/etc_ticket.png') 0 0 no-repeat; position:fixed; top:10px; right:0; z-index:1000; display:flex; align-items:center; justify-content:flex-end; transform:translateX(100%); transition:transform 0.5s ease-in-out;}
+header #hidden_menu {width:220px; height:70px; background:url('../images/etc/etc_ticket.png') 0 0 no-repeat; position:fixed; top:10px; right:0; z-index:1000; display:flex; align-items:center; justify-content:flex-end; transform:translateX(100%); transition:transform 0.5s ease-in-out;}
 header #hidden_menu.active {transform:translateX(0);}
 header #hidden_menu a {width:150px; font-size:13px; text-align:center; word-break:keep-all; display:block;}
 header #hidden_menu strong {display:block;}
@@ -124,7 +124,7 @@ header #hidden_menu button:after {transform:rotate(135deg);}
 .video-bg video {width:100%; height:100%;object-fit:cover; display: block;}
 
 
-.to-bottom { width: 12.8205vw; aspect-ratio: 1 / 1; /* height: 5rem; */position: absolute; left:50%; bottom: 3.554dvh; z-index:2; font-size: 0; order: 1; background-image: url(/assets/images/work_detail/to-bottom.svg); background-repeat: no-repeat; background-size: cover; transform:translateX(-50%);;}
+.to-bottom { width: 12.8205vw; aspect-ratio: 1 / 1; /* height: 5rem; */position: absolute; left:50%; bottom: 3.554dvh; z-index:2; font-size: 0; order: 1; background-image: url(../images/work_detail/to-bottom.svg); background-repeat: no-repeat; background-size: cover; transform:translateX(-50%);;}
 @keyframes active_sitemap {
   0% {top:50%; right:50%; bottom:50%; left:50%; opacity:0;}
   10% {top:49.9%; right:49.9%; bottom:49.9%; left:49.9%; opacity:0;}
@@ -154,10 +154,10 @@ header #hidden_menu button:after {transform:rotate(135deg);}
   header .site_map .bottom {display:flex; flex-direction:column; justify-content:flex-start; align-items:flex-start; gap:20px;}
   header .site_map .bottom a[href="/contact.html"] {display:none;}
   header .site_map .bottom a[href="http://daum.net"] {display:flex; align-items:center;}
-  header .site_map .bottom a[href="http://daum.net"]::after {content:''; width:20px; height:20px; margin-left:12px; background-image:url('/assets/images/common/icon_split.png'); background-size:500px 500px; background-position:-200px -50px;}
-  header.type3 .inner a::before {width:14px; height:13px; background-image:url('/assets/images/common/icon_split.png'); background-position:-97px -114px; background-repeat:no-repeat; background-size:500px auto; content:''; display:block; transform:rotate(0deg);}
+  header .site_map .bottom a[href="http://daum.net"]::after {content:''; width:20px; height:20px; margin-left:12px; background-image:url('../images/common/icon_split.png'); background-size:500px 500px; background-position:-200px -50px;}
+  header.type3 .inner a::before {width:14px; height:13px; background-image:url('../images/common/icon_split.png'); background-position:-97px -114px; background-repeat:no-repeat; background-size:500px auto; content:''; display:block; transform:rotate(0deg);}
   header.type3.black .inner a {color:#000;}
-  header.type3.black .inner a::before {width:14px; height:13px; background-image:url('/assets/images/common/icon_split.png'); background-position:-115px -114px; background-repeat:no-repeat; background-size:500px auto; content:''; display:block; transform:rotate(0deg);}
+  header.type3.black .inner a::before {width:14px; height:13px; background-image:url('../images/common/icon_split.png'); background-position:-115px -114px; background-repeat:no-repeat; background-size:500px auto; content:''; display:block; transform:rotate(0deg);}
   header.type3.black .inner .btn_ham:before, header.type3.black .inner .btn_ham::after {border-top:5px solid #000;}
   .custom-cursor.dot-cursor {display: none;}
   header .site_map li a .dash.on {width:50px;}

@@ -61,7 +61,7 @@ em {display:none;}
 .about_swiper {position: relative;}
 .about_awards .cont_inner dl dd h2 p {overflow:hidden;}
 .about_awards .cont_inner dl dd h2 p strong {font-size:40px; font-weight:700; display:block;}
-.about_awards .cont_inner dl dd dl dt span {width:58px; height:58px; box-sizing:border-box; background-image:url('/assets/images/common/icon_split.png'); background-size:500px 500px;  display:inline-block;}
+.about_awards .cont_inner dl dd dl dt span {width:58px; height:58px; box-sizing:border-box; background-image:url('../images/common/icon_split.png'); background-size:500px 500px;  display:inline-block;}
 .about_awards .cont_inner dl dd dl {padding:50px 0; border-bottom:1px solid #E9E9E9;}
 .about_awards .cont_inner dl dd dl:last-of-type {border-bottom:0;}
 .about_awards .cont_inner dl dd dl dd {display:flex; flex-direction:column;}
